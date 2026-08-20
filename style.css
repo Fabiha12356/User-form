@@ -1,5 +1,5 @@
 #Home-page{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +7,8 @@
     align-items: center;
     gap: 10px;
     height: 58vh;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+       
 }
 #Home{
     width: 100%;
@@ -16,7 +18,10 @@
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color:#bccfd1 ;
+   background-color:#c1cad1 ;
+   background: #ffffff;
+   background: #caf0f8;
+
 }
 .title span {
   display: inline-block;
