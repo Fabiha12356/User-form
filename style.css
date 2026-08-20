@@ -1,8 +1,27 @@
+#Home-page{
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 58vh;
+}
+#Home{
+    width: 100%;
+    border: 1px solid  rebeccapurple;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color:#bccfd1 ;
+}
 .title span {
   display: inline-block;
   transition: 0.3s ease;
 }
-
 /* hover par word move */
 .title span:hover {
   transform: translateY(-15px) rotate(-3deg);
@@ -32,4 +51,8 @@
 
 .title span:nth-child(6):hover {
   color: #8b5cf6;
+}
+h1{
+    font-weight: bolder;
+    font-size: 80px;
 }
