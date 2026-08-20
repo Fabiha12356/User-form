@@ -1,0 +1,35 @@
+.title span {
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+/* hover par word move */
+.title span:hover {
+  transform: translateY(-15px) rotate(-3deg);
+  color:red;
+}
+
+/* different colors */
+.title span:nth-child(1):hover {
+  color: #6c63ff;
+}
+
+.title span:nth-child(2):hover {
+  color: #00bcd4;
+}
+
+.title span:nth-child(3):hover {
+  color: #22c55e;
+}
+
+.title span:nth-child(4):hover {
+  color: #f59e0b;
+}
+
+.title span:nth-child(5):hover {
+  color: #ec4899;
+}
+
+.title span:nth-child(6):hover {
+  color: #8b5cf6;
+}
