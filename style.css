@@ -1,5 +1,4 @@
 #Home-page{
-    /* border: 1px solid black; */
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +26,7 @@
   display: inline-block;
   transition: 0.3s ease;
 }
-/* hover par word move */
+
 .title span:hover {
   transform: translateY(-15px) rotate(-3deg);
   color:red;
@@ -60,4 +59,14 @@
 h1{
     font-weight: bolder;
     font-size: 80px;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
 }
