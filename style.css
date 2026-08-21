@@ -22,6 +22,12 @@
    background: #caf0f8;
 
 }
+.btn{
+   background-color:#648caa !important;
+}
+body{
+  background-color: white !important;
+}
 .title span {
   display: inline-block;
   transition: 0.3s ease;
@@ -32,7 +38,7 @@
   color:red;
 }
 
-/* different colors */
+/* di-fferent colors */
 .title span:nth-child(1):hover {
   color: #6c63ff;
 }
@@ -62,7 +68,7 @@ h1{
 }
 
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
-font-size: 1rem;
+font-size: 3rem;
 line-height: 2.15;
 padding-left: .75em;
 padding-right: .75em;
