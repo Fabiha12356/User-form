@@ -16,7 +16,7 @@ let form = document.querySelector("#form-valid");
 let subbutton = document.querySelector("button");
 console.log(subbutton);
 
-form.addEventListener("submit", async(e)=>{
+form && form.addEventListener("submit", async(e)=>{
 e.preventDefault();
 
 
@@ -113,7 +113,7 @@ console.log(logoutBtn);
         console.log(error);
     } else {
         console.log("User logged out");
-        window.location.href = "index.html";
+        window.location.href = "/index.html";
     }
 });
 
