@@ -16,7 +16,6 @@ let form = document.querySelector("#form-valid");
 let subbutton = document.querySelector("button");
 console.log(subbutton);
 
-if(window.location.href = "/index.html"){
 form.addEventListener("submit", async(e)=>{
 e.preventDefault();
 
@@ -100,7 +99,7 @@ inputs.forEach((input)=>{
 })
 
 })
-}
+
 
 
 
