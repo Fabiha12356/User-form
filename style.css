@@ -6,21 +6,21 @@
     align-items: center;
     gap: 10px;
     height: 58vh;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
        
 }
 #Home{
     width: 100%;
-    border: 1px solid  rebeccapurple;
     display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color:#c1cad1 ;
-   background: #ffffff;
    background: #caf0f8;
 
+}
+.line{
+    border: 2px solid rgb(126, 92, 92) !important;
 }
 .btn{
    background-color:#648caa !important;
@@ -67,6 +67,7 @@ h1{
     font-size: 80px;
 }
 
+/* Bootstrapcss */
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
 font-size: 3rem;
 line-height: 2.15;
@@ -76,3 +77,18 @@ padding-right: .75em;
 .card-registration .select-arrow {
 top: 13px;
 }
+/* Navbaar*/
+
+#header{
+    width: 100%;
+   background: #caf0f8 !important;
+}
+#nav-div{
+width: 75%;
+background-color: transparent !important;
+background: #caf0f8 !important;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+border-radius: 5px !important;
+padding: 5px 8px !important;
+}
+

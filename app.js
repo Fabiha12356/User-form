@@ -7,7 +7,7 @@ const client = createClient(supabaseUrl, supabaseKey);
 
 
 let form = document.querySelector("#form-valid");
-console.log(form);
+// console.log(form);
 
 
 
@@ -16,25 +16,28 @@ console.log(form);
 let subbutton = document.querySelector("button");
 console.log(subbutton);
 
-
-
+if(window.location.href = "/index.html"){
 form.addEventListener("submit", async(e)=>{
 e.preventDefault();
 
 
 let flag = false;
 let inputs = document.querySelectorAll("input");
+console.log(inputs[0].value)
 
 inputs.forEach((input)=>{
     if(input.value === ""){
+        input.classList.add("line");
         flag = true
- 
     }
+    
 })
 
 if(flag){
     return;
 }
+
+
 let userDta =  new FormData(form)
 console.log(userDta);
 let userInfo = Object.fromEntries(userDta);
@@ -46,7 +49,9 @@ if(userInfo){
   icon: "success",
   draggable: true
 });
-window.location.href = "/home.html"
+setTimeout(() => {
+    window.location.href = "/home.html"
+}, 2000);
 }
 
 
@@ -90,6 +95,26 @@ catch(error){
     console.log(error)
 }
 
-
+inputs.forEach((input)=>{
+    input.value ="";
+})
 
 })
+}
+
+
+
+let logoutBtn =document.querySelector("#SignoutBtn");
+console.log(logoutBtn);
+
+ logoutBtn && logoutBtn.addEventListener("click", async () => {
+    const { error } = await client.auth.signOut();
+
+    if (error) {
+        console.log(error);
+    } else {
+        console.log("User logged out");
+        window.location.href = "index.html";
+    }
+});
+

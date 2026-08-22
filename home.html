@@ -9,6 +9,24 @@
 </head>
 <body>
 
+      <header id="header">
+        <nav class="navbar navbar-expand-lg  d-flex">
+            <div class="container" id="nav-div">
+                <a class="navbar-brand" href="#"
+                style="font-weight: bolder;">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn "
+                  id="SignoutBtn">Signout!</button>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+
 <div id="Home">
     <div id="Home-page">
     <h1 class="title">
@@ -28,6 +46,9 @@
     </h1>
 </div>
 </div>
-<script src="./bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
